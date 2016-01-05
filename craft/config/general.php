@@ -8,5 +8,26 @@
  */
 
 return array(
+	'*' => array(
+	    'omitScriptNameInUrls' => true,
+	),
 
+  'localhost' => array(
+    'devMode' => true,
+    'siteUrl' => 'http://localhost:1337/',
+    'environmentVariables' => array(
+      'basePath' => '/regnet-craft/html/',
+      'baseUrl'  => 'http://localhost:1337/',
+    ),
+    'testToEmailAddress' => 'dev@email.com',
+  ),
+
+  // Use IP address of your droplet below
+  '188.166.67.105' => array(
+    'siteUrl' => 'http://188.166.67.105/',
+    'environmentVariables' => array(
+      'basePath' => '/var/www/html/',
+      'baseUrl'  => 'http://188.166.67.105/',
+    )
+  )
 );
